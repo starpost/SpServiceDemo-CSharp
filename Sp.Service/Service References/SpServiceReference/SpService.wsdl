@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://service.sp.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SpService" targetNamespace="http://service.sp.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://service.sp.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="batchOrderService" type="tns:batchOrderService" />
+      <xs:element name="batchOrderServiceResponse" type="tns:batchOrderServiceResponse" />
+      <xs:element name="downFinancialFile" type="tns:downFinancialFile" />
+      <xs:element name="downFinancialFileResponse" type="tns:downFinancialFileResponse" />
+      <xs:element name="getAllTrackListService" type="tns:getAllTrackListService" />
+      <xs:element name="getAllTrackListServiceResponse" type="tns:getAllTrackListServiceResponse" />
+      <xs:element name="getBarCode" type="tns:getBarCode" />
+      <xs:element name="getBarCodeResponse" type="tns:getBarCodeResponse" />
+      <xs:element name="getFinanciallistService" type="tns:getFinanciallistService" />
+      <xs:element name="getFinanciallistServiceResponse" type="tns:getFinanciallistServiceResponse" />
+      <xs:element name="getHtmlLable" type="tns:getHtmlLable" />
+      <xs:element name="getHtmlLableResponse" type="tns:getHtmlLableResponse" />
+      <xs:element name="getTrackListService" type="tns:getTrackListService" />
+      <xs:element name="getTrackListServiceResponse" type="tns:getTrackListServiceResponse" />
+      <xs:element name="getlogoimagestr" type="tns:getlogoimagestr" />
+      <xs:element name="getlogoimagestrResponse" type="tns:getlogoimagestrResponse" />
+      <xs:element name="orderConfirmService" type="tns:orderConfirmService" />
+      <xs:element name="orderConfirmServiceResponse" type="tns:orderConfirmServiceResponse" />
+      <xs:element name="orderService" type="tns:orderService" />
+      <xs:element name="orderServiceResponse" type="tns:orderServiceResponse" />
+      <xs:complexType name="getBarCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBarCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFinanciallistService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFinanciallistServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAllTrackListService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAllTrackListServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="orderService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="orderServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHtmlLable">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHtmlLableResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTrackListService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTrackListServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getlogoimagestr">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getlogoimagestrResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="orderConfirmService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="orderConfirmServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="downFinancialFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="downFinancialFileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="batchOrderService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="batchOrderServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getFinanciallistService">
+    <wsdl:part name="parameters" element="tns:getFinanciallistService" />
+  </wsdl:message>
+  <wsdl:message name="getAllTrackListServiceResponse">
+    <wsdl:part name="parameters" element="tns:getAllTrackListServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="batchOrderServiceResponse">
+    <wsdl:part name="parameters" element="tns:batchOrderServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="batchOrderService">
+    <wsdl:part name="parameters" element="tns:batchOrderService" />
+  </wsdl:message>
+  <wsdl:message name="getBarCodeResponse">
+    <wsdl:part name="parameters" element="tns:getBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="downFinancialFile">
+    <wsdl:part name="parameters" element="tns:downFinancialFile" />
+  </wsdl:message>
+  <wsdl:message name="downFinancialFileResponse">
+    <wsdl:part name="parameters" element="tns:downFinancialFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="orderServiceResponse">
+    <wsdl:part name="parameters" element="tns:orderServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHtmlLable">
+    <wsdl:part name="parameters" element="tns:getHtmlLable" />
+  </wsdl:message>
+  <wsdl:message name="orderConfirmServiceResponse">
+    <wsdl:part name="parameters" element="tns:orderConfirmServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getlogoimagestr">
+    <wsdl:part name="parameters" element="tns:getlogoimagestr" />
+  </wsdl:message>
+  <wsdl:message name="getFinanciallistServiceResponse">
+    <wsdl:part name="parameters" element="tns:getFinanciallistServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTrackListService">
+    <wsdl:part name="parameters" element="tns:getTrackListService" />
+  </wsdl:message>
+  <wsdl:message name="getlogoimagestrResponse">
+    <wsdl:part name="parameters" element="tns:getlogoimagestrResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTrackListServiceResponse">
+    <wsdl:part name="parameters" element="tns:getTrackListServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHtmlLableResponse">
+    <wsdl:part name="parameters" element="tns:getHtmlLableResponse" />
+  </wsdl:message>
+  <wsdl:message name="orderConfirmService">
+    <wsdl:part name="parameters" element="tns:orderConfirmService" />
+  </wsdl:message>
+  <wsdl:message name="getBarCode">
+    <wsdl:part name="parameters" element="tns:getBarCode" />
+  </wsdl:message>
+  <wsdl:message name="orderService">
+    <wsdl:part name="parameters" element="tns:orderService" />
+  </wsdl:message>
+  <wsdl:message name="getAllTrackListService">
+    <wsdl:part name="parameters" element="tns:getAllTrackListService" />
+  </wsdl:message>
+  <wsdl:portType name="ISpService">
+    <wsdl:operation name="getBarCode">
+      <wsdl:input name="getBarCode" message="tns:getBarCode" />
+      <wsdl:output name="getBarCodeResponse" message="tns:getBarCodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getFinanciallistService">
+      <wsdl:input name="getFinanciallistService" message="tns:getFinanciallistService" />
+      <wsdl:output name="getFinanciallistServiceResponse" message="tns:getFinanciallistServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllTrackListService">
+      <wsdl:input name="getAllTrackListService" message="tns:getAllTrackListService" />
+      <wsdl:output name="getAllTrackListServiceResponse" message="tns:getAllTrackListServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="orderService">
+      <wsdl:input name="orderService" message="tns:orderService" />
+      <wsdl:output name="orderServiceResponse" message="tns:orderServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getHtmlLable">
+      <wsdl:input name="getHtmlLable" message="tns:getHtmlLable" />
+      <wsdl:output name="getHtmlLableResponse" message="tns:getHtmlLableResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getTrackListService">
+      <wsdl:input name="getTrackListService" message="tns:getTrackListService" />
+      <wsdl:output name="getTrackListServiceResponse" message="tns:getTrackListServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getlogoimagestr">
+      <wsdl:input name="getlogoimagestr" message="tns:getlogoimagestr" />
+      <wsdl:output name="getlogoimagestrResponse" message="tns:getlogoimagestrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="orderConfirmService">
+      <wsdl:input name="orderConfirmService" message="tns:orderConfirmService" />
+      <wsdl:output name="orderConfirmServiceResponse" message="tns:orderConfirmServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="downFinancialFile">
+      <wsdl:input name="downFinancialFile" message="tns:downFinancialFile" />
+      <wsdl:output name="downFinancialFileResponse" message="tns:downFinancialFileResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="batchOrderService">
+      <wsdl:input name="batchOrderService" message="tns:batchOrderService" />
+      <wsdl:output name="batchOrderServiceResponse" message="tns:batchOrderServiceResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SpServiceSoapBinding" type="tns:ISpService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getFinanciallistService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getFinanciallistService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getFinanciallistServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBarCode">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBarCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBarCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllTrackListService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getAllTrackListService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAllTrackListServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="orderService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="orderService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="orderServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHtmlLable">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getHtmlLable">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getHtmlLableResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTrackListService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTrackListService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTrackListServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlogoimagestr">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getlogoimagestr">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getlogoimagestrResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="orderConfirmService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="orderConfirmService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="orderConfirmServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="batchOrderService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="batchOrderService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="batchOrderServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="downFinancialFile">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="downFinancialFile">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="downFinancialFileResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SpService">
+    <wsdl:port name="SpServiceImplPort" binding="tns:SpServiceSoapBinding">
+      <soap:address location="http://112.74.88.204:9070/starpost-webservice/spservice" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
